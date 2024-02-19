@@ -1,0 +1,120 @@
+
+/*ESTILOD DE LOS ENLACES (a)*/
+a.enlaceNav{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0.5rem 0.85rem; /*ANCHO DE LOS ENLACES, MODIFICAR SI SE AGREGAN MAS ELEMENTOS*/
+    color: var(--blanco);
+    font-family: var(--fuente1);
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+    user-select: none;
+    transition: var(--transicion);
+}
+
+/*cuando se pasa el mouse por encima del link (enlace)*/
+a.enlaceNav:hover{
+    color: var(--blanco);
+    background-color: var(--naranja1);
+    transition: var(--transicion);
+}
+
+a.enlaceNav:hover div svg{
+    fill: var(--gris);
+}
+
+/*dimensiones del div dentro de la etiqueta menuItemLink
+esta etiqueta tiene un logo svg y el texto que forman el elemento item del navbar*/
+a.enlaceNav div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.enlaceNav div svg{
+    display: none;
+    fill: var(--naranja2);
+    margin-right: 0.5rem;
+}
+
+/*para que el menu (items => texto e iconos)se adapten a multiples resoluciones se lleva el siguiente orden
+    //menor resolucion => crece el tamaño del div*/
+    @media screen and (max-width: 1080px){
+        a.enlaceNav{
+            width: 100%;
+            margin-left: -3.5%;
+        }
+        
+
+        a.enlaceNav div{
+            width: 20%;
+            justify-content: left;
+        }
+
+        a.enlaceNav div svg{
+            display: flex;
+        }
+    }
+
+/*otra vez...
+    //menor resolucion => crece el tamaño del div*/
+    @media screen and (max-width: 880px){
+        a.enlaceNav{
+            width: 101%;
+            margin-left: -4.7%;
+        }
+
+        a.enlaceNav div{
+            width: 40%;
+            justify-content: left;
+        }
+
+        a.enlaceNav div svg{
+            display: flex;
+        }
+    }
+
+/*una vez mas...
+   //menor resolucion => crece el tamaño del div*/
+    @media screen and (max-width: 500px){
+        a.enlaceNav{
+            width: 103%;
+            margin-left: -10.5%;
+        }
+        
+        a.enlaceNav div{
+            width: 60%;
+            justify-content: left;
+        }
+
+        a.enlaceNav div svg{
+            display: flex;
+        }
+    }
+
+/*y una ultima vez...
+    //menor resolucion => crece el tamaño del div*/
+    @media screen and (max-width: 280px){
+        a.enlaceNav div{
+            width: 70%;
+            justify-content: left;
+        }
+
+        a.enlaceNav div svg{
+            display: flex;
+        }
+    }
+
+    
+
+
+a.active{
+    color: var(--naranja1);
+}
+

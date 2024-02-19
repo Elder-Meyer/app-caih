@@ -1,0 +1,63 @@
+
+/*VARIABLES DE LOS COLORES*/
+:root{
+    --gris: #404040;
+    --cafe: #593A15;
+    --naranja1: #D9923B; /*(fuerte)color mas tenue*/
+    --naranja2: #D99C2B; /*(claro)color mas brillante*/
+    --blanco: #F2F2F2;
+    
+    --fuente1: sans-serif;
+    --transicion: all 0.3s linear;
+    --transicion2: all 0.5s;
+}
+
+body{
+    background-color: #ddd;
+}
+
+/*DISEÑO DE LA BARRA DE SCROLLBAR|*/
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar:vertical {
+    width:7px;
+}
+
+body::-webkit-scrollbar-button:increment,body::-webkit-scrollbar-button {
+    display: none;
+} 
+
+body::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--naranja1);
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+
+
+
+/*LUGAR DONDE SE CARGA EL/LOS COMPONENTES*/
+/*NO LO MUEVAS A MENOS DE QUE SEA NECESARIO*/
+
+
+
+
+/*DISEÑO DE LAS PÁGINAS INDIVIDUALES*/
+/*ESTE SI ES MAS FLEXIBLE PARA SER EDITADO*/
+.page{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 98.9%;
+    min-height: 600px;
+    margin: 0px auto;
+    
+}
+
