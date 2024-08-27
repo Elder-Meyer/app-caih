@@ -4,12 +4,12 @@ import "firebase/compat/firestore"
 import { getStorage, ref, deleteObject } from "firebase/storage";
 
 export const app = firebase.initializeApp({
-    apiKey: "AIzaSyCI-uAsU3SHavAugY4GVDR6QALfWbbOSeY",
-    authDomain: "app-caih.firebaseapp.com",
-    projectId: "app-caih",
-    storageBucket: "app-caih.appspot.com",
-    messagingSenderId: "596116028493",
-    appId: "1:596116028493:web:453a054256683d83d17004"
+    apiKey: import.meta.env.VITE_API_KEY,
+    authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_SENDER_ID,
+    appId: import.meta.env.VITE_APP_ID
 });
   
 
